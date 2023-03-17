@@ -202,7 +202,7 @@
         function weather(){
             let place = document.getElementById("input-box").value
 
-            let url = 'http://api.weatherapi.com/v1/current.json?key=c7768abb66bb42df940135146231303&q=' + place + '&aqi=no'
+            let url = 'https://api.weatherapi.com/v1/current.json?key=c7768abb66bb42df940135146231303&q=' + place + '&aqi=no'
             fetch(url).then(function(response){
                 return response.json()
             }).then(function(data){
